@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="disaster.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#aedbe2">
+
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <title>Coledra Cloud  ->  Disaster Recovery</title>
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <nav id="sticky" class="navbar navbar-expand-lg navbar-dark container-fluid"
+    style="border-bottom:0.01em solid #17a2b8 ;">
+    <a class="navbar-brand mr-5" href="index.html" style="font-size: 2.2rem;">Coledra Cloud</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-5 display-6">
+        <li class="nav-item px-3">
+          <a class="nav-link e1" href="index.html">Home</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link e2 " href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown active px-3">
+          <a class="nav-link dropdown-toggle e3 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="disaster_recovery.html" style="font-size: 1.4rem">Disaster Recovery</a>
+            <a class="dropdown-item" href="Network_Monitering.html" style="font-size: 1.4rem">Network
+              Monitoring&nbsp;<span class="badge badge-pill rounded-circle badge-info position-absolute new"
+                style="font-size:x-small;">New</span></a>
+            <a class="dropdown-item" href="Managed_It_services.html" style="font-size: 1.4rem">Managed IT Services &nbsp; &nbsp;&nbsp;</a>
+            <a class="dropdown-item" href="Consulting.html" style="font-size: 1.4rem">Consulting &nbsp;<span
+                class="badge badge-pill rounded-circle badge-info position-absolute new"
+                style="font-size:x-small;">New</span></a>
+            <a class="dropdown-item" href="blog.html" style="font-size: 1.4rem">Blog</a>
+          </div>
+        </li>
+        <li class="nav-item  px-3">
+          <a class="nav-link e4 " href="contact_main.html">Contact Us</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- min navbar -->
+
+
+  <div class="d-flex bg-light px-5 py-2" style="font-size: 1.2em; list-style: none;">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item"><a href="#" class="text-dark">Services</a></li>
+    <li class="breadcrumb-item text-info active" aria-current="page">Disaster Recovery</li>
+  </div>
+
+
+  <!-- Hero Section -->
+  <div id="disaster-recovery"
+    style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;"
+    class=" text-white text-center">
+    <video id="video-background" src="images/video.mp4" autoplay muted loop></video>
+    <div class="container con">
+      <h1 class="display-3" data-aos="zoom-in" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">Disaster Recovery</h1>
+      <p class="pt-3 display-5" style="color: black; font-weight: bolder; font-size: x-large; transition: all 1.2s ease-in-out 0.1s;" data-aos="fade-up" data-aos-duration="4000"
+      data-aos-offset="80"><strong><em><i class="bi bi-quote quote-icon-left"></i>Coledra
+            Clouds ensuring
+            business
+            continuity in times of disaster<i class="bi bi-quote quote-icon-right"></i></em></strong> </p>
+    </div>
+  </div>
+
+  <!--  About Disaster Recovery Section -->
+  <div class="container p-5">
+    <h2 class="display-5 text-center p-3 p-2">About Disaster Recovery of Cloud technologies</h2>
+    <p class="lead text-center p-2">
+      Building a solidly tiered Disaster Recovery plan is a big challenge in itself.
+
+      But then testing it is a nightmare for business continuity – it can be painfully disruptive and prohibitive.
+
+      An ideal Disaster Recovery solution should be simple and effective (not to mention, with lightning fast RTOs and
+      RPOs).
+      <br>
+    <p class="lead text-center p-2">Disaster recovery is a critical aspect of any business continuity strategy. In
+      today's interconnected world,
+      organizations need to be prepared for unforeseen events that can disrupt their operations. Whether it's a natural
+      disaster like a hurricane or earthquake, a cyber attack that compromises data security, or a hardware failure that
+      leads to system downtime, the impact on businesses can be devastating.</p>
+    </p>
+  </div>
+
+
+  <!-- Disaster Recovery Solutions -->
+
+  <div class=" pt-5 text-dark bg-light">
+    <h1 class="text-center mb-4 pb-5" style="text-decoration: underline; transition: all 2s ease-in-out 20ms;" data-aos="flip-right"
+    data-aos-offset="80">Disaster Recovery Solutions</h1>
+
+    <!-- Backup and Restore -->
+
+    <div class=" text-light py-4" style="font-size: 1.3rem; background-color: black; ">
+      <h2 class="text-center text-info p-2 pt-3 pb-3" data-aos="zoom-in" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">Backup and Restore</h2>
+      <p class="text-center text-light" data-aos="fade-up" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">Implementing regular backups and establishing efficient restore processes are
+        essential for disaster recovery.</p>
+      <div class="row py-5 my-5 mx-2 rounded" style="border: .1em solid black; background-color: #17a2b8;">
+        <div class="col-md-8 pl-5" data-aos="fade-up" data-aos-duration="4000"
+        data-aos-offset="100" style="transition: all 1.2s ease-in-out 0.1s;">
+          <h3 class="text-black pl-4"><strong>Backup</strong></h3>
+          <ul>
+            <li>Perform regular backups of critical data and systems.</li>
+            <li>Choose appropriate backup methods like full, incremental, or
+              differential backups.</li>
+            <li>Store backups securely in offsite or cloud storage.</li>
+            <li>Perform regular backups of critical data and systems.</li>
+            <li>Choose appropriate backup methods like full, incremental, or
+              differential backups.</li>
+            <li>Store backups securely in offsite or cloud storage.</li>
+            <li>Store backups securely in offsite or cloud storage.</li>
+            <li>Perform regular backups of critical data and systems.</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img src="images/backup.png" class="img-fluid rounded" data-aos="flip-left" data-aos-duration="4000"
+          data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;" style=" height: 20rem;" alt="Backup and Restore">
+        </div>
+      </div>
+
+      <div class="row py-5 mx-2 rounded" style="border: .1em solid black; background-color: #17a2b8;">
+        <div class="col-md-4">
+          <img src="images/restore.png" class="img-fluid rounded" data-aos="flip-right" data-aos-duration="4000"
+          data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s; height: 25rem; width:100%;"
+            alt="Backup and Restore">
+        </div>
+        <div class="col-md-8 pl-5" data-aos="fade-up" data-aos-duration="4000"
+        data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">
+          <h3 class="text-black pl-4" ><strong>Restore</strong></h3>
+          <ul>
+            <li>Verify the integrity and availability of backup data. Have a well-documented restore process</li>
+            <li>Test the restore process periodically to ensure its
+              effectiveness. Verify the integrity and availability of backup data.</li>
+            <li>Have a well-documented restore process.Test the restore process periodically to ensure its
+              effectiveness.</li>
+            <li>Verify the integrity and availability of backup data. Have a well-documented restore process</li>
+            <li>Test the restore process periodically to ensure its
+              effectiveness. Verify the integrity and availability of backup data.</li>
+            <li>Have a well-documented restore process.Test the restore process periodically to ensure its
+              effectiveness.</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- High Availability -->
+
+    <div class="bg-light" style="font-size: 1.5rem; background-color: black; color: black;">
+      <h2 class="text-info pt-5 pb-3 text-center">High Availability</h2>
+      <p class="text-center">Deploying redundant systems and infrastructure to ensure high availability of critical
+        services during a disaster.</p>
+
+      <div class="container-fluid" style="font-size: 1.3rem;">
+        <div class="row text-center pb-4">
+          <div class="col-md-4">
+            <div class="card card1" style="background-color: black;">
+              <h3 class="card-title text-info pt-5 pb-3"><i class="fas fa-database pr-2"></i> Redundant Infrastructure
+              </h3>
+              <div class="card-body py-2">
+                <p class="card-text text-light">Deploy redundant servers, network equipment, and power sources across
+                  multiple
+                  locations to ensure service availability during a disaster. Power sources across multiple locations to
+                  ensure service availability during a disaster.</p>
+                <button class="btn btn1 btn-outline-info" data-toggle="collapse" data-target="#collapse3"
+                  aria-expanded="false">Read
+                  Content
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card2" style="background-color: black;">
+              <h3 class="card-title text-info pt-5 pb-3"><i class="fas fa-balance-scale pr-2"></i> Load Balancing</h3>
+              <div class="card-body py-2">
+                <p class="card-text text-light">Implement load balancing techniques to distribute traffic across
+                  multiple servers
+                  or data centers, ensuring optimal resource utilization and high availability. Power sources across
+                  multiple locations to ensure service availability during a disaster.</p>
+                <button class="btn btn2 btn-outline-info" data-toggle="collapse" data-target="#collapse3"
+                  aria-expanded="false">Read
+                  Content
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card3" style="background-color: black;">
+              <h3 class="card-title text-info pt-5 pb-3"><i class="fas fa-exchange-alt pr-2"></i> Automatic Failover
+              </h3>
+              <div class="card-body py-2">
+                <p class="card-text text-light">Configure automatic failover mechanisms to detect service disruptions
+                  and
+                  seamlessly switch to backup systems or data centers to maintain uninterrupted availability. Power
+                  sources across multiple locations to ensure service availability during a disaster.</p>
+                <button class="btn btn3 btn-outline-info" data-toggle="collapse" data-target="#collapse3"
+                  aria-expanded="false">Read
+                  Content
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <virtual-machitne></virtual-machitne> -->
+  <div class="row border m-2 mt-5" style="border-radius: 1em;">
+    <div class="col-md-6 py-3  bg" style="position: relative;">
+      <h3 class="pb-3" data-aos="zoom-in" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">Virtual Machine Recovery</h3>
+      <p style="font-size: large; transition: all 2s ease-in-out 0.2s;"  data-aos="zoom-in-down" data-aos-duration="4000"
+      data-aos-offset="60">Our virtual machine recovery services enable rapid restoration of your entire IT infrastructure in a
+        virtualized environment. In the event of a disaster, your systems can be quickly spun up on virtual machines,
+        minimizing downtime and ensuring business continuity.</p>
+      <table class="table text-light"  data-aos="fade-up" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Instant Recovery</td>
+            <td>Quickly recover virtual machines with minimal downtime.</td>
+          </tr>
+          <tr>
+            <td>Granular Recovery</td>
+            <td>Selectively restore specific files or applications within virtual machines.</td>
+          </tr>
+          <tr>
+            <td>Automated Failover</td>
+            <td>Automatically failover to virtual machines in case of a primary system failure.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="col-md-6 py-3  bg1">
+      <h3  data-aos="zoom-in" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">24/7 Monitoring and Support</h3>
+      <p class="py-3" style="font-size: larger; transition: all 1.2s ease-in-out 0.1s;"  data-aos="zoom-in-down" data-aos-duration="4000"
+      data-aos-offset="80" >We provide round-the-clock monitoring and support for your disaster
+        recovery infrastructure. Our dedicated team
+        is available to promptly address any issues, perform proactive maintenance, and ensure the smooth operation of
+        your disaster recovery solutions.</p>
+      <ul  data-aos="fade-up" data-aos-duration="4000"
+      data-aos-offset="80" style="transition: all 1.2s ease-in-out 0.1s;">
+        <li style="font-size: larger;" class="py-3">Real-time monitoring of your disaster recovery systems</li>
+        <li style="font-size: larger;" class="py-3">Proactive identification and resolution of potential issues</li>
+        <li style="font-size: larger;" class="py-3">Regular performance tuning and optimization</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- why Choose   -->
+
+
+
+  <div class="container" data-aos="zoom-in" data-aos-duration="4000"
+  data-aos-offset="120" style="transition: all 1.2s ease-in-out 0.1s;">
+    <div class="row my-5">
+      <div class="col">
+        <h2>Why Choose Coledra Cloud ?</h2>
+        <ul>
+          <li class="py-3 " style="font-size: larger;"><strong class="text-info">Reliable and Secure:</strong> Our
+            cloud-based infrastructure provides a reliable and secure
+            environment for your data and applications.</li>
+          <li class="py-3 " style="font-size: larger;"><strong class="text-info">Rapid Recovery:</strong> We offer fast
+            and efficient recovery options to minimize downtime and
+            ensure your business operations are up and running quickly.</li>
+          <li class="py-3 " style="font-size: larger;"><strong class="text-info">Scalability:</strong> Our solutions are
+            designed to scale with your business needs, allowing you
+            to expand or reduce resources as required.</li>
+          <li class="py-3 " style="font-size: larger;"><strong class="text-info">Expert Support:</strong> Our team of
+            experienced professionals is available 24/7 to provide
+            support and guidance during disaster recovery scenarios.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="mx-5">
+
+    <!-- Connect -->
+
+    <section style="position: relative;">
+      <div id="bgg" class="container-fluid py-4 my-3 text-center">
+        <h1 class="pb-5" style="color: #fff;">Connect for Clarity</h1>
+        <a href="contact_main.html" class="btn btn-outline-light btn-lg ">Contact Us <i
+            class=" px-2 bi bi-person-lines-fill"></i></a>
+      </div>
+    </section>
+
+
+
+  <!-- <footer></footer> footer-->
+
+
+  <footer class="container-fluid bg-dark text-light pt-5">
+    <div class="row">
+      <div class="col-5 text-center">
+        <h3><a href="/" class="mb-3 text-decoration-none text-light">COLEDRA CLOUD</a></h3>
+        <p>123 Main Street</p>
+        <p>City, State, ZIP Code</p>
+        <div class="text-center d-flex justify-content-center mb-4">
+          <a href="https://www.facebook.com/coledra/" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-facebook" class="socialhov1 "
+              style="font-size: xx-large; "></ion-icon></a>
+          <a href="https://www.instagram.com/_coledab2b_/?hl=en" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-instagram" class=" socialhov2 "
+              style="font-size: xx-large; "></ion-icon></a>
+          <a href="https://www.whatsapp.com/" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-whatsapp" class="socialhov3"
+              style="font-size: xx-large;"></ion-icon>
+          </a> <a href="https://in.linkedin.com/company/coleda-pvt-ltd" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-linkedin" class="socialhov4"
+              style="font-size: xx-large;"></ion-icon>
+          </a> <a href="https://www.youtube.com/@coledab2b849" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-youtube" class="socialhov5"
+              style="font-size: xx-large;"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="col-2 ">
+        <h4 class="text-info">Home</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/" class="text-white">Types of cloud</a></li>
+          <li class="mb-2"><a href="" class="text-white">join Coledra Clouds</a></li>
+          <li class="mb-2"><a href="" class="text-white">Services</a></li>
+          <li class="mb-2"><a href="#" class="text-white">Cloud Solutions</a></li>
+          <li class="mb-2"><a href="#" class="text-white">Benefits Of Coledra Clouds</a></li>
+          <li class="mb-2"><a href="contact_main.html" class="text-white">Connect</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h4 class="text-info">About Us</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="text-white" href="">Introduction</a></li>
+          <li class="mb-2"><a class="text-white" href="">Why choose Us</a></li>
+          <li class="mb-2"><a class="text-white" href="">Our Mission</a></li>
+          <li class="mb-2"><a class="text-white" href="">About our Employe</a></li>
+          <li class="mb-2"><a class="text-white" href="">Expertise</a></li>
+          <li class="mb-2"><a class="text-white" href="">Partners</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h4 class="text-info">Services</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="text-white" href="disaster_recovery.html">Disaster Recovery</a></li>
+          <li class="mb-2"><a class="text-white" href="Consulting.html">Consulting</a></li>
+          <li class="mb-2"><a class="text-white" href="Managed_It_services.html">Managed It services</a></li>
+          <li class="mb-2"><a class="text-white" href="blog.html">Blog</a></li>
+          <li class="mb-2"><a class="text-white" href="Network_Monitering.html">Network_Monitering</a></li>
+          <li class="mb-2"><a class="text-white" href="contact_main.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- <footer for copyright> -->
+
+
+
+
+
+  <footer class=" bg-transparent text-light" style="font-size:medium;">
+    <p class="float-end py-3 text-center"><a href="disaster_recovery.html" class="btn btn-info"
+        style="font-size: large;">Back to top ⇡</a></p>
+    <p class="text-center border-top py-3">© 2017–2023 COLEDRA CLOUD, Inc. | <a href="#"
+        class="badge badge-light">Privacy</a> | <a href="#" class="badge badge-light">Terms</a></p>
+  </footer>
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+<script src="navbar.js"></script>
+
+
+  <script src="disaster.js">
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

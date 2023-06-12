@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* nav   */
+#sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.display-6 {
+    font-size: 1.3rem;
+}
+
+
+nav::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* nav :hover */
+
+.e3{
+    color: #17a2b8 !important;
+    scale: 1.1;
+      }
+      .e2:hover{
+        color: #17a2b8 !important;
+        transform: scale(1.1);
+      }
+      .e1:hover{
+        color: #17a2b8 !important;
+        transform: scale(1.1);
+      }
+      .e4:hover{
+        color: #17a2b8 !important;
+        transform: scale(1.1);
+      }
+    
+    
+    
+    /* nav javascript */
+    
+    
+    .new.animate__animated {
+      opacity: 1;
+      animation-play-state: running;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      /* animation-delay: 2s; */
+    }
+    
+
+
+/*                hero                     */
+
+#disaster-recovery {
+    position: relative;
+    height: 50vh;
+  }
+
+  #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+
+  .con {
+    position: relative;
+    z-index: 1;
+  }
+
+  .quote-icon-left {
+    color: #000000;
+    display: inline-block;
+    right: 0.1em;
+    top: -0.5em;
+    position: relative;
+  }
+
+ .quote-icon-right {
+    color: #000000;
+    display: inline-block;
+    top: -0.5rem;
+    right: -0.7rem;
+    position: relative;
+    transform: scale(-1, -1);
+  }
+
+#bg2 {
+    /* RGB: (13, 110, 253) */
+
+    background: #17a2b8 url(images/bg-coledra.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+
+}
+
+hr {
+    background-color: #17a2b8;
+}
+
+
+
+/*  disaster recovery solution */
+.card1{
+    height: 22vh;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.card1.expanded1 {
+    height: 50vh; /* New height when toggled */
+  }
+  .card2{
+    height: 22vh;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.card2.expanded2 {
+    height: 50vh; /* New height when toggled */
+  }
+  .card3{
+    height: 22vh;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.card3.expanded3 {
+    height: 50vh; /* New height when toggled */
+  }
+
+
+
+.card-text {
+    display: none;
+    
+  }
+
+
+/* footer */
+/* social media hover */
+.socialhov1:hover{
+    color: #0165E1;
+    transform: scale(1.4);
+}
+.socialhov2:hover{
+    color: rgb(255, 143, 103);
+    transform: scale(1.4);
+}
+.socialhov3:hover{
+    color: #128C7E;
+    transform: scale(1.4);
+}
+.socialhov4:hover{
+    color:  #0A66C2;
+    transform: scale(1.4);
+}
+.socialhov5:hover{
+    color: #FF0000;
+    transform: scale(1.4);
+}
+
+
+
+.bg::before {
+  content: "";
+  background: #17a2b8 url(images/bg-coledra.jpg);
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius:1em ;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+.bg1::before {
+  content: "";
+  background: #17a2b8 url(images/bg3.jpg);
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius:1em ;
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+
+#bgg::before {
+  content: "";
+  background: #17a2b8 url(images/bg11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}

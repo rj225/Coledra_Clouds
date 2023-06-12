@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+.bg {
+    background: #a9e4ed url(images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+}
+
+#bg::before {
+    content: "";
+    background: #17a2b8 url(images/contact1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+a.nav-link:hover {
+    color: #17a2b8;
+}
+
+.display-6 {
+    font-size: 1.3rem;
+}
+
+
+
+hr {
+    background-color: #17a2b8;
+
+}
+
+#sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+
+
+nav::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+
+
+/* social media hover */
+.socialhov1:hover{
+    color: #0165E1;
+    transform: scale(1.4);
+}
+.socialhov2:hover{
+    color: rgb(255, 143, 103);
+    transform: scale(1.4);
+}
+.socialhov3:hover{
+    color: #128C7E;
+    transform: scale(1.4);
+}
+.socialhov4:hover{
+    color:  #0A66C2;
+    transform: scale(1.4);
+}
+.socialhov5:hover{
+    color: #FF0000;
+    transform: scale(1.4);
+}
+
+
+
+
+/* nav :hover */
+
+
+.e3{
+color: #17a2b8 !important;
+scale: 1.1;
+  }
+  .e2:hover{
+    color: #17a2b8 !important;
+    transform: scale(1.1);
+  }
+  .e1:hover{
+    color: #17a2b8 !important;
+    transform: scale(1.1);
+  }
+  .e4:hover{
+    color: #17a2b8 !important;
+    transform: scale(1.1);
+  }
+
+
+
+/* javascript */
+
+
+.new.animate__animated {
+    opacity: 1;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+  }

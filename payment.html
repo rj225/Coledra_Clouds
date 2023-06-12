@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coledra Cloud Payment Service </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#aedbe2">
+  
+  <style>
+    body {
+      background-color: black;
+    }
+    .display-6 {
+    font-size: 1.3rem;
+}
+/* social media hover */
+.socialhov1:hover{
+    color: #0165E1;
+    transform: scale(1.4);
+}
+.socialhov2:hover{
+    color: rgb(255, 143, 103);
+    transform: scale(1.4);
+}
+.socialhov3:hover{
+    color: #128C7E;
+    transform: scale(1.4);
+}
+.socialhov4:hover{
+    color:  #0A66C2;
+    transform: scale(1.4);
+}
+.socialhov5:hover{
+    color: #FF0000;
+    transform: scale(1.4);
+}
+
+
+
+
+
+/* nav :hover */
+
+
+.e3{
+color: #17a2b8 !important;
+scale: 1.1;
+  }
+  .e2:hover{
+    color: #17a2b8 !important;
+    transform: scale(1.1);
+  }
+  .e1:hover{
+    color: #17a2b8 !important;
+    transform: scale(1.1);
+  }
+  .e4:hover{
+    color: #17a2b8 !important;
+    transform: scale(1.1);
+  }
+
+
+
+/* javascript */
+
+
+.new.animate__animated {
+    opacity: 1;
+}
+
+.new {
+    opacity: 1;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+}
+
+#sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+nav::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+}
+    
+.responsive-icon {
+      max-width: 70px;
+      height: auto;
+
+    }
+   
+
+    .container {
+      max-width: 500px;
+      margin: 100px auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $("#nextBtn").click(function() {
+        $("#billingSection").addClass("hidden");
+        $("#paymentSection").removeClass("hidden");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav id="sticky" class="navbar navbar-expand-lg navbar-dark container-fluid"
+    style="border-bottom:0.01em solid #17a2b8 ;">
+    <a class="navbar-brand mr-5" href="index.html" style="font-size: 2.2rem;">Coledra Cloud</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-5 display-6">
+        <li class="nav-item  px-3">
+          <a class="nav-link e1" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active px-3">
+          <a class="nav-link e2 " href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown  px-3">
+          <a class="nav-link dropdown-toggle e3 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="disaster_recovery.html" style="font-size: 1.4rem">Disaster Recovery</a>
+            <a class="dropdown-item" href="Network_Monitering.html" style="font-size: 1.4rem">Network
+              Monitoring&nbsp;<span class="badge badge-pill rounded-circle badge-info position-absolute new"
+                style="font-size:x-small;">New</span></a>
+            <a class="dropdown-item" href="Managed_It_services.html" style="font-size: 1.4rem">Managed IT Services &nbsp; &nbsp;&nbsp;</a>
+            <a class="dropdown-item" href="Consulting.html" style="font-size: 1.4rem">Consulting &nbsp;<span
+                class="badge badge-pill rounded-circle badge-info position-absolute new"
+                style="font-size:x-small;">New</span></a>
+            <a class="dropdown-item" href="blog.html" style="font-size: 1.4rem">Blog</a>
+          </div>
+        </li>
+        <li class="nav-item  px-3">
+          <a class="nav-link e4 " href="contact_main.html">Contact Us</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- min navbar -->
+
+
+  <div class="d-flex bg-light px-5 py-2" style="font-size: 1.2em; list-style: none;">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item text-info active" aria-current="page">Payment Page</li>
+  </div>
+
+<div class="jumbotron bg-info">
+    <h1 class="text-center">One step behind to get the best experience</h1>
+</div>
+
+  <div class="container p-4 bg-light" style="border-radius: 2em;">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="text-center">Coledra Cloud Service Payment</h4>
+      </div>
+      <div class="card-body">
+        <div id="billingSection">
+          <form action="#" method="post">
+            <h5>Billing Address</h5>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="YOur Name" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Your Address" required>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" required>
+              </div>
+              <div class="col">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" required>
+              </div>
+              <div class="col">
+                <label for="zip">Zip Code</label>
+                <input type="text" class="form-control" id="zip" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-4" id="nextBtn">Next</button>
+          </form>
+        </div>
+
+
+
+        <!-- payment section -->
+
+
+
+        <div id="paymentSection" class="hidden">
+          <form action="#" method="post">
+            <h5>Payment Information</h5>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="upiHeading">
+                  <h6 class="mb-0">
+                    <button class="btn text-info" style="font-size: larger;" type="button" data-toggle="collapse" data-target="#upiCollapse" aria-expanded="true" aria-controls="upiCollapse">
+                      UPI
+                    </button>
+                    &nbsp;
+                    &nbsp;
+                    <img src="images/Amazon_Pay.png" alt="Amazon_Pay" class="responsive-icon">
+                      <img src="images/gpay.jpg" alt="Google_Pay" class="responsive-icon">
+                      <img src="images/phonepe.jpg" alt="phonepe" class="responsive-icon">
+                    
+                  </h6>
+                </div>
+                <div id="upiCollapse" class="collapse show" aria-labelledby="upiHeading" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="upiName">Name</label>
+                      <input type="text" class="form-control" id="upiName" name="upiName" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="upiId">UPI ID</label>
+                      <input type="text" class="form-control" id="upiId" name="upiId" placeholder="Enter UPI ID" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="cardsHeading">
+                  <h6 class="mb-0">
+                    <button class="btn text-info collapsed" style="font-size: larger;" type="button" data-toggle="collapse" data-target="#cardsCollapse" aria-expanded="false" aria-controls="cardsCollapse">
+                      Cards
+                    </button>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <img src="images/mastercard.png" alt="Amazon_Pay" class="responsive-icon">
+                      <img src="images/visa card.jpg" alt="Google_Pay" class="responsive-icon">
+                      <img src="images/Rupay-Cards.jpg" alt="phonepe" class="responsive-icon">
+                  </h6>
+                </div>
+                <div id="cardsCollapse" class="collapse" aria-labelledby="cardsHeading" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="cardName">Cardholder Name</label>
+                        <input type="text" class="form-control" id="cardName" placeholder="John Doe" required>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <label for="expiryDate">Expiry Date</label>
+                          <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col">
+                          <label for="cvv">CVV</label>
+                          <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                        </div>
+                      </div>
+                      <div class="form-group mt-4">
+                        <label for="amount">Payment Amount</label>
+                        <input type="text" class="form-control" id="amount" placeholder="100.00" required>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+           
+            <button type="submit" class="btn btn-primary btn-block mt-4">Pay Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- <footer></footer> footer-->
+
+
+ <footer class="container-fluid bg-dark text-light pt-5">
+    <div class="row">
+      <div class="col-5 text-center">
+        <h3><a href="index.html" class="mb-3 text-decoration-none text-light">COLEDRA CLOUD</a></h3>
+        <p>123 Main Street</p>
+        <p>City, State, ZIP Code</p>
+        <div class="text-center d-flex justify-content-center mb-4">
+          <a href="https://www.facebook.com/coledra/" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-facebook" class="socialhov1 "
+              style="font-size: xx-large; "></ion-icon></a>
+          <a href="https://www.instagram.com/_coledab2b_/?hl=en" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-instagram" class=" socialhov2 "
+              style="font-size: xx-large; "></ion-icon></a>
+          <a href="https://www.whatsapp.com/" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-whatsapp" class="socialhov3"
+              style="font-size: xx-large;"></ion-icon>
+          </a> <a href="https://in.linkedin.com/company/coleda-pvt-ltd" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-linkedin" class="socialhov4"
+              style="font-size: xx-large;"></ion-icon>
+          </a> <a href="https://www.youtube.com/@coledab2b849" class="d-flex mx-2 p-2"
+            style="color: white; text-decoration: none; "><ion-icon name="logo-youtube" class="socialhov5"
+              style="font-size: xx-large;"></ion-icon>
+          </a>
+        </div>
+      </div>
+  
+  
+  
+      <div class="col-2 ">
+        <h4 class="text-info">Home</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/" class="text-white">Types of cloud</a></li>
+          <li class="mb-2"><a href="" class="text-white">join Coledra Clouds</a></li>
+          <li class="mb-2"><a href="" class="text-white">Services</a></li>
+          <li class="mb-2"><a href="#" class="text-white">Cloud Solutions</a></li>
+          <li class="mb-2"><a href="#" class="text-white">Benefits Of Coledra Clouds</a></li>
+          <li class="mb-2"><a href="contact_main.html" class="text-white">Connect</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-2">
+        <h4 class="text-info">About Us</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="text-white" href="">Introduction</a></li>
+          <li class="mb-2"><a class="text-white" href="">Why choose Us</a></li>
+          <li class="mb-2"><a class="text-white" href="">Our Mission</a></li>
+          <li class="mb-2"><a class="text-white" href="">About our Employe</a></li>
+          <li class="mb-2"><a class="text-white" href="">Expertise</a></li>
+          <li class="mb-2"><a class="text-white" href="">Partners</a></li>
+        </ul>
+      </div>
+  
+      <div class="col-2">
+        <h4 class="text-info">Services</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="text-white" href="disaster_recovery.html">Disaster Recovery</a></li>
+          <li class="mb-2"><a class="text-white" href="Consulting.html">Consulting</a></li>
+          <li class="mb-2"><a class="text-white" href="Managed_It_services.html">Managed It services</a></li>
+          <li class="mb-2"><a class="text-white" href="blog.html">Blog</a></li>
+          <li class="mb-2"><a class="text-white" href="Network_Monitering.html">Network_Monitering</a></li>
+          <li class="mb-2"><a class="text-white" href="contact_main.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+  
+    </div>
+  </footer>
+  
+  
+  
+  
+  <!-- <footer for copyright> -->
+  
+  
+  
+  
+  
+  <footer class=" bg-transparent text-light" style="font-size:medium;">
+    <p class="float-end py-3 text-center"><a href="payment.html" class="btn btn-info"
+        style="font-size: large;">Back to top ⇡</a></p>
+    <p class="text-center border-top py-3">© 2017–2023 COLEDRA CLOUD, Inc. | <a href="#"
+        class="badge badge-light">Privacy</a> | <a href="#" class="badge badge-light">Terms</a></p>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="navbar.js"></script>
+</body>
+
+</html>

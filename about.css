@@ -1,0 +1,148 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+
+.display-6 {
+    font-size: 1.3rem;
+}
+
+
+hr {
+    background-color: #17a2b8;
+
+}
+
+#sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+
+nav::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* social media hover */
+.socialhov1:hover {
+    color: #0165E1;
+    transform: scale(1.4);
+}
+
+.socialhov2:hover {
+    color: rgb(255, 143, 103);
+    transform: scale(1.4);
+}
+
+.socialhov3:hover {
+    color: #128C7E;
+    transform: scale(1.4);
+}
+
+.socialhov4:hover {
+    color: #0A66C2;
+    transform: scale(1.4);
+}
+
+.socialhov5:hover {
+    color: #FF0000;
+    transform: scale(1.4);
+}
+
+.back::before {
+    content: "";
+    background: #17a2b8 url(images/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+    /* background-blend-mode: lighten; */
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#back2 {
+    background: #17a2b8 url(images/bgnew5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
+}
+
+ul {
+    list-style: none;
+}
+
+/* nav :hover */
+
+
+.e2{
+color: #17a2b8 !important;
+scale: 1.1;
+}
+.e1:hover{
+color: #17a2b8 !important;
+transform: scale(1.1);
+}
+.e3:hover{
+color: #17a2b8 !important;
+transform: scale(1.1);
+}
+.e4:hover{
+color: #17a2b8 !important;
+transform: scale(1.1);
+}
+
+/* testimonial */
+
+.tales {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .stars i {
+    color: goldenrod;
+  }
+
+  .quote .quote-icon-left {
+    color: #17a2b8;
+    display: inline-block;
+    right: 0.1em;
+    top: -0.5em;
+    position: relative;
+  }
+
+  .quote .quote-icon-right {
+    color: #17a2b8;
+    display: inline-block;
+    top: -0.3rem;
+    right: -0.1rem;
+    position: relative;
+    transform: scale(-1, -1);
+  }
+  .new.animate__animated {
+    opacity: 1;
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+  }
